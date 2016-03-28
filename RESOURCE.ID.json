@@ -1,0 +1,26 @@
+{
+  "id": "csiXF_bbCode_34D69797",
+  "name": "(CSI/XF/BBCODE) Progress Bar",
+  "description": "Панель для отображения индексации хода или выполнения каких-либо задач.",
+  "version": "1.0.1",
+  "type": "xenforo-bbcode",
+  "keywords": [
+    "xenforo",
+    "bbcode",
+    "add-on"
+  ],
+  "homepage": "http://cyberspace.industries/",
+  "license": "GPL-3.0",
+  "authors": [
+    {
+      "name": "Kitsune Solar",
+      "email": "msg@kitsune.solar",
+      "homepage": "http://kitsune.solar/"
+    }
+  ],
+  "support": {
+    "source": "",
+    "issues": "http://cyberspace.community/",
+    "forum": "http://cyberspace.community/"
+  }
+}

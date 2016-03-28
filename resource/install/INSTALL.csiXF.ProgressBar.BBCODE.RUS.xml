@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addon addon_id="csiXF_bbCode_34D69797" title="(CSI/XF/BBCODE) Progress Bar" version_string="1.0.1" version_id="2" url="http://cyberspace.industries/" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+  <admin_navigation/>
+  <admin_permissions/>
+  <admin_style_properties/>
+  <admin_templates/>
+  <admin_template_modifications/>
+  <code_events/>
+  <code_event_listeners/>
+  <cron/>
+  <email_templates/>
+  <email_template_modifications/>
+  <optiongroups/>
+  <permissions>
+    <permission_groups/>
+    <permissions/>
+    <interface_groups/>
+  </permissions>
+  <phrases>
+    <phrase title="custom_bb_code_progress_title" version_id="1" version_string="1.0.0"><![CDATA[Индикатор прогресса]]></phrase>
+    <phrase title="custom_bb_code_progress_desc" version_id="1" version_string="1.0.0"><![CDATA[Панель для отображения индексации хода или выполнения каких-либо задач.]]></phrase>
+  </phrases>
+  <route_prefixes/>
+  <style_properties/>
+  <templates>
+    <template title="csiXF_bbCode_34D69797_tag_progress" version_id="2" version_string="1.0.1"><![CDATA[<xen:require css="csiXF_bbCode_34D69797.css" />
+<div class="csiXF_bbCode_34D69797 bbCodeProgress bbCodeProgress-bar"><div class="bbCodeProgress-progress" data-percentage="" style="width:{xen:raw $content}%;"><span class="bbCodeProgress-percent">{xen:raw $content}%</span></div></div>]]></template>
+    <template title="csiXF_bbCode_34D69797.css" version_id="1" version_string="1.0.0"><![CDATA[.bbCodeProgress {}
+.bbCodeProgress-bar {
+  box-sizing: border-box;
+  padding: 5px;
+  width: 50%;
+  border: 1px solid #f9d9b0;
+  background: #fff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1) inset;
+}
+.bbCodeProgress-bar .bbCodeProgress-progress {
+  box-sizing: border-box;
+  padding: 5px;
+  background: #fff4e5;
+  color: #f9bc6d;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.bbCodeProgress-bar .bbCodeProgress-percent {
+  display: block;
+  text-align: right;
+}]]></template>
+  </templates>
+  <public_template_modifications/>
+  <bb_code_media_sites/>
+  <bb_codes>
+    <bb_code bb_code_id="progress" bb_code_mode="callback" has_option="optional" callback_class="CSI\BbCodeProgress\BbCode\Formatter\Base" callback_method="getBbCodeProgress" option_regex="" trim_lines_after="1" plain_children="1" disable_smilies="1" disable_nl2br="1" disable_autolink="1" allow_empty="0" allow_signature="0" editor_icon_url="" sprite_mode="0" sprite_params_x="" sprite_params_y="" active="1">
+      <replace_html><![CDATA[]]></replace_html>
+      <replace_html_email><![CDATA[]]></replace_html_email>
+      <replace_text><![CDATA[]]></replace_text>
+      <example><![CDATA[[PROGRESS]63[/PROGRESS]]]></example>
+    </bb_code>
+  </bb_codes>
+</addon>
